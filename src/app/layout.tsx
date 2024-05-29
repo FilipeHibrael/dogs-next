@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { typeSecond } from '@/functions/fonts';
+import Header from '@/components/header';
 
 export const metadata: Metadata = {
   title: 'Dogs Next',
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={typeSecond.variable}>{children}</body>
+      <body className={typeSecond.variable}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
