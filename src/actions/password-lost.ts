@@ -1,6 +1,6 @@
 'use server';
 
-import { PASSWORD_LOST, USER_POST } from '@/functions/api';
+import { PASSWORD_LOST } from '@/functions/api';
 import apiError from '@/functions/api-error';
 
 export default async function passwordLost(state: {}, formData: FormData) {
