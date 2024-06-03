@@ -1,4 +1,4 @@
-export default async function ContaPage() {
+export default function ContaPage() {
   return (
     <main>
       <h1>Conta</h1>
